@@ -7,6 +7,7 @@ const Contact = () => {
   const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false)
+  
   const sendEmail = (e) => {
     e.preventDefault();
 

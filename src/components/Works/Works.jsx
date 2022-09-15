@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+
+import html1 from "../../img/html1.png";
+import c1 from "../../img/c1.png";
+import js1 from "../../img/js1.png";
+import react1 from "../../img/react1.png";
+import python1 from "../../img/python1.png";
+
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
@@ -21,18 +23,27 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+            Programming/Developing:
           </span>
-          <span>Brands & Clients</span>
+          <span>Languages, Frameworks & Tools:</span>
           <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+            React JS: Its aim is to allow developers to easily create fast user interfaces for 
+            websites and applications alike. The main concept of React. js is virtual DOM
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            <hr />
+            JavaScript: It is a scripting language that enables you to create dynamically
+             updating content, control multimedia, animate images, and pretty much everything else.
             <br />
-            y dummy text of printingLorem
+            <hr />
+            Html5: It is the standard markup language for Web pages. With HTML you can create your own Website.
             <br />
-            ispum is simpley dummy text of printing
+            <hr />
+            Python: It is is a high-level, general-purpose programming language. Its design philosophy emphasizes 
+            code readability with the use of significant indentation
+            <br />
+            <hr />
+            C++: C++ is a powerful general-purpose programming language. It can be used to develop operating systems
+            , browsers, games, and so on.
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
@@ -47,26 +58,26 @@ const Works = () => {
       </div>
       <div className="w-right">
         <motion.div
-          initial={{ rotate: 45 }}
-          whileInView={{ rotate: 0 }}
+          initial={{ rotate: 0 }}
+          whileInView={{ rotate: 30 }}
           viewport={{ margin: "-40px" }}
-          transition={{ duration: 3.5, type: "spring" }}
+          transition={{ duration: 2.5, type: "spring" }}
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={c1} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={js1} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={react1} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={python1} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={html1} alt="" />
           </div>
         </motion.div>
         {/* background Circles */}

@@ -16,6 +16,17 @@
   gap: 4rem;
   color: white;
 }
+
+.n-button {
+  flex: 2;
+}
+
+.f-icons>:nth-child(1){
+font-family: cursive;
+font-style: italic;
+color: chartreuse;
+}
+
 .f-icons {
   display: flex;
   gap: 2rem;
